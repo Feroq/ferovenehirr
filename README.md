@@ -1,1 +1,139 @@
 # ferovenehirr
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ferovenehir - Aşkımızın Hikayesi</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    font-family: 'Open Sans', sans-serif;
+    color: #4a2c2a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 50px;
+  }
+  header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px #b37400;
+  }
+  main {
+    width: 100%;
+    max-width: 600px;
+    background: #fff5f5cc;
+    border-radius: 15px;
+    padding: 20px 20px 30px;
+    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.4);
+    text-align: center;
+  }
+  .poem {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #7a3e3e;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255,105,135,0.3);
+    transition: transform 0.3s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .music {
+    margin-top: 10px;
+  }
+
+  /* Modal ışık kutusu */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 15px;
+  }
+  .close {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+
+<header>Ferovenehir</header>
+
+<main>
+  <section class="poem">
+    <p>Kalplerimiz bir nehir,<br />
+    Aşkımız sonsuz bir serüven,<br />
+    Her gün yeniden başlar,<br />
+    Adınla akar içimde sevgi.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/4jB8Zz3/fero-4.jpg" alt="Fotoğraf 4" onclick="openModal(this.src)" />
+  </section>
+
+  <section class="music">
+    <iframe width="100%" height="180" src="https://www.youtube.com/embed/fKwr3i2iQQI?autoplay=0&loop=1&playlist=fKwr3i2iQQI" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modal-img" />
+</div>
+
+<script>
+  function openModal(src) {
+    document.getElementById('modal-img').src = src;
+    document.getElementById('modal').style.display = "block";
+  }
+  function closeModal(event) {
+    if(event) event.stopPropagation();
+    document.getElementById('modal').style.display = "none";
+  }
+</script>
+
+</body>
+</html>
