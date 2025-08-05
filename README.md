@@ -1,3 +1,4 @@
+🫶🏼FERO VE NEHİR'İN AŞKI🫶🏼
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -9,9 +10,9 @@
 
   body {
     margin: 0;
-    background: linear-gradient(135deg, #fceabb, #f8b500);
+    background: linear-gradient(135deg, #f0e4d7, #d9bea8);
     font-family: 'Open Sans', sans-serif;
-    color: #4a2c2a;
+    color: #3c2f2f;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,46 +22,47 @@
   header {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 6px #b37400;
+    margin-bottom: 25px;
+    color: #6b3a3a;
+    text-shadow: 1px 1px 3px #b9996e;
   }
   main {
     width: 100%;
-    max-width: 600px;
-    background: #fff8f2;
+    max-width: 650px;
+    background: #fff8f0;
     border-radius: 15px;
-    padding: 30px 25px 40px;
-    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.35);
+    padding: 30px 30px 40px;
+    box-shadow: 0 10px 25px rgba(107, 58, 58, 0.3);
     text-align: center;
   }
   .poem {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    margin-bottom: 35px;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
     color: #6b3a3a;
   }
   .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 35px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
   }
   .gallery img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 6px 18px rgba(255,105,135,0.25);
+    box-shadow: 0 4px 12px rgba(107, 58, 58, 0.25);
     transition: transform 0.3s ease;
   }
   .gallery img:hover {
     transform: scale(1.05);
   }
   .music {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
-  /* Modal ışık kutusu */
+  /* Modal */
   .modal {
     display: none;
     position: fixed;
@@ -99,18 +101,21 @@
 <main>
   <section class="poem">
     <p>
-      Kalplerimiz birleşti, <br />
-      Aşkımız her daim taze.<br />
-      Seninle hayat bir şiir,<br />
-      Sevgiyle dolu her an.
+      Kalplerimiz birbirine dokunuyor,<br />
+      Her günümüz sevgiyle doluyor.<br />
+      Seninle hayat bir şiir gibi,<br />
+      Her anımız umut ve neşe dolu.
     </p>
   </section>
 
   <section class="gallery">
+    <!-- Çift fotoğraf 1 -->
     <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1 Tekrar" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3 Tekrar" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
+    
+    <!-- Çift fotoğraf 2 -->
+    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
   </section>
 
   <section class="music">
