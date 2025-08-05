@@ -1,4 +1,3 @@
-# ferovenehirr
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -21,37 +20,37 @@
   }
   header {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 4px #b37400;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px #b37400;
   }
   main {
     width: 100%;
     max-width: 600px;
-    background: #fff5f5cc;
+    background: #fff8f2;
     border-radius: 15px;
-    padding: 20px 20px 30px;
-    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.4);
+    padding: 30px 25px 40px;
+    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.35);
     text-align: center;
   }
   .poem {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: #7a3e3e;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #6b3a3a;
   }
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
-    gap: 12px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
   }
   .gallery img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255,105,135,0.3);
+    box-shadow: 0 6px 18px rgba(255,105,135,0.25);
     transition: transform 0.3s ease;
   }
   .gallery img:hover {
@@ -99,17 +98,19 @@
 
 <main>
   <section class="poem">
-    <p>Kalplerimiz bir nehir,<br />
-    Aşkımız sonsuz bir serüven,<br />
-    Her gün yeniden başlar,<br />
-    Adınla akar içimde sevgi.</p>
+    <p>
+      Kalplerimiz birleşti, <br />
+      Aşkımız her daim taze.<br />
+      Seninle hayat bir şiir,<br />
+      Sevgiyle dolu her an.
+    </p>
   </section>
 
   <section class="gallery">
     <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1 Tekrar" onclick="openModal(this.src)" />
     <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/4jB8Zz3/fero-4.jpg" alt="Fotoğraf 4" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3 Tekrar" onclick="openModal(this.src)" />
   </section>
 
   <section class="music">
