@@ -1,3 +1,4 @@
+FERO🫶🏼NEHİR
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -9,9 +10,9 @@
 
   body {
     margin: 0;
-    background: linear-gradient(135deg, #fceabb, #f8b500);
+    background: linear-gradient(135deg, #f0e4d7, #d9bea8);
     font-family: 'Open Sans', sans-serif;
-    color: #4a2c2a;
+    color: #3c2f2f;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,47 +21,48 @@
   }
   header {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 4px #b37400;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #6b3a3a;
+    text-shadow: 1px 1px 3px #b9996e;
   }
   main {
     width: 100%;
-    max-width: 600px;
-    background: #fff5f5cc;
+    max-width: 650px;
+    background: #fff8f0;
     border-radius: 15px;
-    padding: 20px 20px 30px;
-    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.4);
+    padding: 30px 30px 40px;
+    box-shadow: 0 10px 25px rgba(107, 58, 58, 0.3);
     text-align: center;
   }
   .poem {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.5;
-    margin-bottom: 30px;
-    color: #7a3e3e;
+    margin-bottom: 40px;
+    color: #6b3a3a;
   }
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
-    gap: 12px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
   }
   .gallery img {
     width: 100%;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255,105,135,0.3);
+    box-shadow: 0 4px 12px rgba(107, 58, 58, 0.25);
     transition: transform 0.3s ease;
   }
   .gallery img:hover {
     transform: scale(1.05);
   }
   .music {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
-  /* Modal ışık kutusu */
+  /* Modal */
   .modal {
     display: none;
     position: fixed;
@@ -98,17 +100,22 @@
 
 <main>
   <section class="poem">
-    <p>Kalplerimiz bir nehir,<br />
-    Aşkımız sonsuz bir serüven,<br />
-    Her gün yeniden başlar,<br />
-    Adınla akar içimde sevgi.</p>
+    <p>
+      Kalplerimiz birbirine dokunuyor,<br />
+      Her günümüz sevgiyle doluyor.<br />
+      Seninle hayat bir şiir gibi,<br />
+      Her anımız umut ve neşe dolu.
+    </p>
   </section>
 
   <section class="gallery">
+    <!-- Çift fotoğraf 1 -->
     <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
+    
+    <!-- Çift fotoğraf 2 -->
     <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/Yj6jFxC/fero-3.jpg" alt="Fotoğraf 3" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/4jB8Zz3/fero-4.jpg" alt="Fotoğraf 4" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
   </section>
 
   <section class="music">
