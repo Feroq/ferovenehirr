@@ -1,4 +1,3 @@
-🫶🏼FERO VE NEHİR'İN AŞKI🫶🏼
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -36,61 +35,20 @@
     text-align: center;
   }
   .poem {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.9rem;
-    line-height: 1.5;
-    margin-bottom: 40px;
-    color: #6b3a3a;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #4b2b2b;
   }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-bottom: 40px;
-  }
-  .gallery img {
-    width: 100%;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(107, 58, 58, 0.25);
-    transition: transform 0.3s ease;
-  }
-  .gallery img:hover {
-    transform: scale(1.05);
+  .love-note {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #b22222;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
   }
   .music {
     margin-top: 15px;
-  }
-
-  /* Modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.85);
-  }
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 15px;
-  }
-  .close {
-    position: fixed;
-    top: 25px;
-    right: 30px;
-    color: #fff;
-    font-size: 38px;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
   }
 </style>
 </head>
@@ -108,38 +66,15 @@
     </p>
   </section>
 
-  <section class="gallery">
-    <!-- Çift fotoğraf 1 -->
-    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/4Vtb9Ln/fero-1.jpg" alt="Fotoğraf 1" onclick="openModal(this.src)" />
-    
-    <!-- Çift fotoğraf 2 -->
-    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
-    <img src="https://i.ibb.co/HB6Vp3f/fero-2.jpg" alt="Fotoğraf 2" onclick="openModal(this.src)" />
-  </section>
+  <div class="love-note">
+    SENİ SEVİYORUM DELİM
+  </div>
 
   <section class="music">
     <iframe width="100%" height="180" src="https://www.youtube.com/embed/fKwr3i2iQQI?autoplay=0&loop=1&playlist=fKwr3i2iQQI" 
     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </section>
 </main>
-
-<!-- Modal -->
-<div id="modal" class="modal" onclick="closeModal()">
-  <span class="close" onclick="closeModal(event)">&times;</span>
-  <img class="modal-content" id="modal-img" />
-</div>
-
-<script>
-  function openModal(src) {
-    document.getElementById('modal-img').src = src;
-    document.getElementById('modal').style.display = "block";
-  }
-  function closeModal(event) {
-    if(event) event.stopPropagation();
-    document.getElementById('modal').style.display = "none";
-  }
-</script>
 
 </body>
 </html>
