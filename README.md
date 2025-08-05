@@ -54,7 +54,7 @@
 </head>
 <body>
 
-<header>🫶🏼SEVDİCEĞİM🫶🏼</header>
+<header>SEVDİCEĞİM🫶🏼</header>
 
 <main>
   <section class="poem">
